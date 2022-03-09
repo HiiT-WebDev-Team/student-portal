@@ -1,2 +1,2 @@
 # student-portal
-A Universities Student Portal
+A University's Student Portal
