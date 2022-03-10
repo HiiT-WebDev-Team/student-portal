@@ -1,4 +1,4 @@
-# Student-portal
+# Student Portal
 
 Version 1.0.0
 
@@ -47,4 +47,4 @@ Fork repository <br> Open index.html
 
 ---
 
-© HiiT Plc 2022
+&copy; HiiT Plc 2022
