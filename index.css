@@ -1,1 +1,36 @@
+/* Modal Trigger */
+.navbar-toggler {
+    margin-right: 20px;
+}
 
+/* Modal */
+.modal {
+    width: 300px;
+}
+.modal-content {
+    width: 300px;
+}
+.nav-link {
+    padding-left: 15px;
+}
+.nav-link {
+    color: #000000;
+}
+.nav-link:visited, .nav-link:hover {
+    background-color: rgba(59, 57, 57, 0.164)!important;
+    color: #000000 !important;
+}
+.sublist {
+    padding-right: 10px;
+}
+
+/* Search Button */
+#search-addon {
+    background-color: inherit;
+}
+
+/* Student Image */
+#Student-image {
+    width: 120px;
+    height: 120px;
+}
