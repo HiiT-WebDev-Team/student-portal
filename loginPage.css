@@ -1,0 +1,53 @@
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    height: 100vh;
+}
+
+
+.container{
+    justify-content: center;
+    width: 25%;
+    margin: 2rem 15rem;
+    padding: 6rem 1rem 4rem 1rem ;
+}
+
+.id{
+    display: flex;
+    justify-content: center;
+}
+
+.pass{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+
+.checkbox{  
+    display: flex;
+    margin-top: 1rem;
+}
+
+.btnn{
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+}
+
+.input{
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1.2rem;
+}
+input.checkBox{
+        transform: scale(1.3);
+        margin-right: 0.5rem;
+}
+
+.btnn1{
+    width: 100%;
+    padding: 0.8rem;
+}
