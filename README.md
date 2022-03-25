@@ -12,7 +12,7 @@ Fork repository <br> Open index.html
 
 ## Dependencies
 
-You would need the following dependencies for this application to work effectively:
+You would need the following dependencies for this webite to work effectively:
 
 Download Bootstrap Version 4 or higher and make sure the folder is named bootstrap
 
