@@ -2,28 +2,25 @@
 
 Version 1.0.0
 
----
-
 ## Introduction
 
----
-
 Student Portal is one of the most used tools on a school website. It’s used to access all vital resources to help students go through college and earn a degree.<br>
-This project is built using HTML, CSS and JAVASCRIPT.
-
----
 
 ## Installation
 
----
-
 Fork repository <br> Open index.html
 
----
+## Dependencies
+
+You would need the following dependencies for this webite to work effectively:
+
+Download Bootstrap Version 4 or higher and make sure the folder is named bootstrap
+
+Download Fontawesome Version 4 or higher and also make sure the folder is named fontawesome
+
+Put these two folders in the assest folder
 
 ## Contributors
-
----
 
 [Joseph Enoch](https://github.com/Josephenoch)<br>
 [Imam Dahir Dan-Azumi](https://github.com/eimaam)<br>
@@ -41,10 +38,7 @@ Fork repository <br> Open index.html
 [GabbyDevx](https://github.com/GabbyDevx)<br>
 [phinaosoba](https://github.com/Phinaosoba)<br>
 
----
 
 ## Licence & Copyright
-
----
 
 &copy; HiiT Plc 2022
