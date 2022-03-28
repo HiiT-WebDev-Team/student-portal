@@ -82,7 +82,7 @@
     <!-- PAGE Body starts here -->
     <div class="body2">
         <div class="body2-nav">
-            <marquee><h1>Personal Details</h1></marquee>
+            <h1>Personal Details</h1>
         </div>
         <div class="body-contents">
             <p>Welcome, <span>$Username</span></p>
@@ -104,7 +104,7 @@
                     <legend>Bio:</legend>
                     <label for="Title">Title:</label>
                     <select>
-                        <option selected>Select</option>
+                        <option selected disabled>Select</option>
                         <option>Mr.</option>
                         <option>Miss.</option>
                         <option>Mrs.</option>
@@ -144,6 +144,7 @@
                     <input type="text" placeholder="HiiT/Faculty/Year/xxx">
                     <label for="level">Level:</label>
                     <select>
+                        <option selected disabled>Choose Level</option>
                         <option>100</option>
                         <option>200</option>
                         <option>300</option>
@@ -152,7 +153,7 @@
                     </select>
                     <label>Faculty:</label>
                     <select>
-                        <option selected>Select</option>
+                        <option selected disabled>Select</option>
                         <option> Engineering</option>
                         <option>Sciences</option>
                         <option>Arts</option>
@@ -172,6 +173,10 @@
                     <input type="text" placeholder="(seperate experiences with comma)" maxlength="45">
                     <label>Interest(s):</label>
                     <input type="text" placeholder="Interested in... (seperate with comma)" maxlength="45">
+                </fieldset>
+                <fieldset>
+                    <legend>All fields filled correctly?</legend>
+                    <button>SUBMIT</button>
                 </fieldset>
             </form>
         </div>
