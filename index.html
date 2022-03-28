@@ -8,6 +8,9 @@
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="pages.css">
 </head>
 <body>
 
@@ -75,6 +78,75 @@
           <button type="button" class="btn btn-secondary btn-footer" data-bs-dismiss="offcanvas">Close</button>
         </div>
     </div>
+
+    <!-- PAGE Body starts here -->
+    <div class="body2">
+        <div class="body2-nav">
+            <h1>Personal Details</h1>
+        </div>
+        <div class="body-contents">
+            <p>Welcome, <span>$Username</span></p>
+            <p>Fill in the below details with the right information to update your Profile and continue registration</p>
+
+            <form>
+                <fieldset>
+                    <legend>Profile:</legend>
+                    <label>Select an image to upload (Passport-like):</label>
+                    <input type="file" id="profile_img">   
+                </fieldset>
+                <fieldset>
+                <legend>Bio:</legend>
+                <label for="Title">Title:</label>
+                <select>
+                    <option selected>Select</option>
+                    <option>Mr.</option>
+                    <option>Miss.</option>
+                    <option>Mrs.</option>
+                    <option>Sir</option>
+                    <option>Ma</option>
+                    <option>Madam</option>
+                </select>
+                <label for="fName">First Name:</label>
+                <input type="text" placeholder="Enter your First Name">
+                <label for="sName">Surname:</label>
+                <input type="text" placeholder="Enter your Surname">
+                <label for="mName">Middle Name:</label>
+                <input type="text" placeholder="Enter your Middle Name">
+                <label>Date of Birth:</label>
+                <input type="date">
+                <label>Email Address:</label>
+                <input type="email" placeholder="student@school.com">
+                <button onclick="">SUBMIT</button>
+                </fieldset>
+            </form>
+        </div>
+        
+
+
+
+
+
+    </div>
+    
+    <!-- PAGE Body ends here -->
+
+    <form>
+        <fieldset>
+        <legend>Bio</legend>
+        <label for="Title">Title:</label>
+        <select>
+            <option selected>Select</option>
+            <option>Mr.</option>
+            <option>Miss.</option>
+            <option>Mrs.</option>
+            <option>Sir</option>
+            <option>Ma</option>
+            <option>Madam</option>
+        </select>
+        </fieldset>
+    </form>
+
+
 </body>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </html>

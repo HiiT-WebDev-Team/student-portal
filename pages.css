@@ -1,0 +1,40 @@
+*{
+    box-sizing: border-box;
+    --default: #fff;
+    --primary: rgb(116, 112, 112);
+    --secondary: #3b3939;
+}
+.body2{
+    background-color: var(--secondary);
+    width: 60%;
+    margin: auto;
+    margin-top: 5rem;
+    font-family: 'Space Grotesk', sans-serif !important;
+    box-shadow: 5px 5px 10px var(--secondary);
+     
+}
+.body2-nav{
+    color: var(--default);
+}
+.body-contents{
+    height: 100vh;
+    background-color: var(--primary);
+}
+form > fieldset{
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+legend{
+    font-size: 2rem;
+}
+input, select, button{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 0;
+}
+input:hover{
+    background-color: var(--secondary);
+}
