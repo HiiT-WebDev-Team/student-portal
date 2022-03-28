@@ -4,21 +4,45 @@
     --primary: rgb(116, 112, 112);
     --secondary: #3b3939;
 }
+a{
+    color: var(--default);
+    text-decoration: none;
+}
 .body2{
     background-color: var(--secondary);
     width: 60%;
-    margin: auto;
+    margin: 5rem auto;
     margin-top: 5rem;
     font-family: 'Space Grotesk', sans-serif !important;
     box-shadow: 5px 5px 10px var(--secondary);
+    color: var(--default);
+
      
 }
 .body2-nav{
     color: var(--default);
+    padding: 0.5rem;
+    text-transform: uppercase;
+    
 }
 .body-contents{
-    height: 100vh;
+    height: auto;
     background-color: var(--primary);
+    padding: 1rem;
+}
+.profileNav{
+    margin: auto;
+    width: 60%;
+    background-color: var(--secondary);
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.profileNav li{
+    text-transform: uppercase;
+    font-size: 1.1rem;
 }
 form > fieldset{
     width: 60%;
@@ -26,9 +50,13 @@ form > fieldset{
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    margin-top: 2rem;
+    border: 1px solid var(--default);
+    color: var(--default);
 }
 legend{
     font-size: 2rem;
+    color: var(--secondary);
 }
 input, select, button{
     padding: 0.5rem;
@@ -37,4 +65,7 @@ input, select, button{
 }
 input:hover{
     background-color: var(--secondary);
+}
+#otherInfo{
+    
 }
