@@ -3,6 +3,9 @@
     --default: #fff;
     --primary: rgb(116, 112, 112);
     --secondary: #3b3939;
+    scroll-behavior: smooth;
+    scroll-snap-align: center;
+    scroll-snap-type: mandatory;
 }
 a{
     color: var(--default);
