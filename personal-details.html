@@ -11,6 +11,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="pages.css">
+    <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.css">
 </head>
 <body>
 
@@ -82,7 +83,7 @@
     <!-- PAGE Body starts here -->
     <div class="body2">
         <div class="body2-nav">
-            <h1>Personal Details</h1>
+            <h1><i class="fa-solid fa-circle-info"></i>Personal Details</h1>
         </div>
         <div class="body-contents">
             <p>Welcome, <span>$Username</span></p>
@@ -96,12 +97,12 @@
             </ul>
             <form>
                 <fieldset id="profile">
-                    <legend>Profile:</legend>
+                    <legend><i class="fa-solid fa-image-portrait"></i>Profile:</legend>
                     <label>Select an image to upload (Passport-like):</label>
                     <input type="file" id="profile_img">   
                 </fieldset>
                 <fieldset id="bio">
-                    <legend>Bio:</legend>
+                    <legend><i class="fa-solid fa-user"></i>Bio:</legend>
                     <label for="Title">Title:</label>
                     <select>
                         <option selected disabled>Select</option>
@@ -122,7 +123,7 @@
                     <input type="date">
                 </fieldset>
                 <fieldset id="contactDetails">
-                    <legend>Contact Details:</legend>
+                    <legend><i class="fa-solid fa-address-card"></i>Contact Details:</legend>
                     <label>Email Address:</label>
                     <input type="email" placeholder="student@school.com">
                     <label>Phone Number:</label>
@@ -139,7 +140,7 @@
                     <input type="tel" placeholder="Phone No. of Next of Kin">
                 </fieldset>
                 <fieldset id="schoolInfo">
-                    <legend>School Info:</legend>
+                    <legend><i class="fa-solid fa-id-badge"></i>Education Info:</legend>
                     <label>Registration/ID Number:</label>
                     <input type="text" placeholder="HiiT/Faculty/Year/xxx">
                     <label for="level">Level:</label>
@@ -164,7 +165,7 @@
                     <input type="text" placeholder="Dept.">
                 </fieldset>
                 <fieldset id="otherInfo">
-                    <legend>Other Info:</legend>
+                    <legend><i class="fa-solid fa-circle-question"></i>Other Info:</legend>
                     <label>Hobbies:</label>
                     <input type="text" placeholder="(seperate Hobbies with comma)" maxlength="35">
                     <label>Skill(s):</label>
@@ -175,7 +176,7 @@
                     <input type="text" placeholder="Interested in... (seperate with comma)" maxlength="45">
                 </fieldset>
                 <fieldset>
-                    <legend>All fields filled correctly?</legend>
+                    <legend><i class="fa-solid fa-check-double"></i>All fields filled correctly?</legend>
                     <button>SUBMIT</button>
                 </fieldset>
             </form>

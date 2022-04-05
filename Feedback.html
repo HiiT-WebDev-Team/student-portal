@@ -7,6 +7,7 @@
     <title>Student Portal</title>
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/fontawesome6/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
@@ -82,15 +83,15 @@
     <!-- PAGE Body starts here -->
     <div class="body2">
         <div class="body2-nav">
-            <h1>Feedback:</h1>
+            <h1><i class="fa-duotone fa-comments-question-check"></i>Feedback:</h1>
         </div>
         <div class="body-contents">
-            <p>Hi there! We'd like to hear from you! </p>
+            <p>Hi there! We'd love to hear from you! </p>
             <p>Got any suggestion(s), question(s) or message(s)?</p>
             <p>Kindly fill in the below Form to reach us. </p>
             <form>
                 <fieldset id="contact-us">
-                    <legend>Contact Us:</legend>
+                    <legend><i class="fa-duotone fa-messages"></i>Contact Us:</legend>
                     <label for="Title">Title:</label>
                     <select>
                         <option selected disabled>Select</option>
@@ -102,13 +103,13 @@
                         <option>Madam</option>
                     </select>
                     <label for="fullName">Full Name:</label>
-                    <input type="text" placeholder="Enter your Full Name" required>
+                    <input type="text" placeholder="Enter your Full Name" minlength="5" required>
                     <label for="mail">eMail Address:</label>
                     <input type="email" placeholder="student@university.com" required>
-                    <label for="phoneNumber">Contact:</label>
-                    <input type="tel" placeholder="Phone Number" minlength="11" required>
+                    <label for="phoneNumber">Phone No:</label>
+                    <input type="tel" placeholder="Phone Number" minlength="11" maxlength="14" required>
                     <label for="message">Enter Message:</label>
-                    <textarea rows="10" required placeholder="...type message here"></textarea>
+                    <textarea rows="10" required placeholder="...type message here" minlength="20"></textarea>
                     <br>
                     <button>SEND</button>
                 </fieldset>

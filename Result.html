@@ -4,18 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Portal - Result</title>
+    <title>Student Portal</title>
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="pages.css">
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="pages.css">
 </head>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-dark bg-dark fixed-top shadow" >
+    <nav class="navbar navbar-dark bg-dark fixed-top shadow">
         <div class="container-fluid">
             <!-- Offcanvas Trigger-->
             <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
@@ -51,7 +51,7 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav">
               <li class="nav-item">
-                  <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Dashboard</a>
+                  <a href="index.html" class="nav-link active"><i class="fa-solid fa-house"></i> Dashboard</a>
               </li>
               <li class="nav-item">
                   <a href="personal-details.html" class="nav-link"><i class="fa-solid fa-user"></i> Personal Details</a>
@@ -64,13 +64,13 @@
                   </ul>
               </li>
               <li class="nav-item">
-                  <a href="Result.html" class="nav-link active"><i class="fa-solid fa-square-poll-horizontal"></i> Result</a>
+                  <a href="result.html" class="nav-link"><i class="fa-solid fa-square-poll-horizontal"></i> Result</a>
               </li>
               <li class="nav-item">
-                  <a href="Lecture-timetable.html" class="nav-link"><i class="fa-solid fa-table"></i> Lecture Timetable</a>
+                  <a href="lecture-timetable.html" class="nav-link"><i class="fa-solid fa-table"></i> Lecture Timetable</a>
               </li>
               <li class="nav-item">
-                  <a href="Feedback.html" class="nav-link"><i class="fa-solid fa-message"></i> Send Feedback</a>
+                  <a href="feedback.html" class="nav-link"><i class="fa-solid fa-message"></i> Send Feedback</a>
               </li>
           </ul>
         </div>
@@ -78,18 +78,31 @@
           <button type="button" class="btn btn-secondary btn-footer" data-bs-dismiss="offcanvas">Close</button>
         </div>
     </div>
-</div>
-    <!-- NAV & Header ends here -->
 
     <!-- PAGE Body starts here -->
     <div class="body2">
         <div class="body2-nav">
-            <h1>Results</h1>
+            <h1><i class="fa-solid fa-file-certificate"></i> Result:</h1>
         </div>
         <div class="body-contents">
-            <p>Welcome,</p>
-            <p>Fill in the below details with the right information to update your Profile and continue registration</p>
+            <p>Welcome, <span>$Username</span></p>
+            <p>Choose a Level from the drop down menu below to display your result for the choosen Level. </p>
+            <form>
+                <fieldset id="bio">
+                    <legend>Choose level</legend>
+                    <label for="level">Level:</label>
+                    <select>
+                        <option selected disabled>Choose Level</option>
+                        <option>100</option>
+                        <option>200</option>
+                        <option>300</option>
+                        <option>400</option>
+                        <option>500</option>
+                    </select>
+                </fieldset>
+            </form>
         </div>
+        
 
 
 
@@ -98,6 +111,7 @@
     </div>
     
     <!-- PAGE Body ends here -->
+
 </body>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </html>

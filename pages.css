@@ -11,6 +11,9 @@ a{
     color: var(--default);
     text-decoration: none;
 }
+i{
+    margin: 0 0.5rem;
+}
 .body2{
     background-color: var(--secondary);
     width: 60%;
@@ -57,17 +60,17 @@ form{
 }
 form > fieldset{
     width: 60%;
-    margin: auto;
+    margin: auto !important;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    margin-top: 2rem;
-    border: 1px solid var(--default);
-    color: var(--default);
+    margin-top: 2rem !important;
+    border: 1px solid var(--default) !important;
+    color: var(--default) !important;
 }
 legend{
-    font-size: 2rem;
-    color: var(--secondary);
+    font-size: 1.5rem !important;
+    color: var(--secondary) !important;
 }
 input, select, button, textarea{
     padding: 0.5rem;
@@ -76,5 +79,5 @@ input, select, button, textarea{
     resize: none;
 }
 input,select,button:hover{
-    cursor:url('http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif'), auto; 
+    cursor:url('http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif'), auto !important; 
 }
