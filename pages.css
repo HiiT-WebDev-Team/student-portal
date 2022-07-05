@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    --default: #fff;
+    --primary: rgb(116, 112, 112);
+    --secondary: #3b3939;
+    scroll-behavior: smooth;
+    scroll-snap-align: center;
+    scroll-snap-type: mandatory;
+}
+a{
+    color: var(--default);
+    text-decoration: none;
+}
+i{
+    margin: 0 0.5rem;
+}
+.body2{
+    background-color: var(--secondary);
+    width: 60%;
+    margin: 5rem auto;
+    font-family: 'Space Grotesk', sans-serif !important;
+    box-shadow: 5px 5px 10px var(--secondary);
+    color: var(--default);
+}
+.body2-nav{
+    width: 100%;
+    color: var(--default);
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+.body2-nav h1{
+    font-size: 1.5rem !important;
+}
+.body-contents{
+    width: 100%;
+    height: auto;
+    background-color: var(--primary);
+    padding: 1rem;
+}
+.body-contents p{
+    text-align: center;
+    font-size: 1.1rem;
+}
+.profileNav{
+    margin: auto;
+    width: 60%;
+    background-color: var(--secondary);
+    list-style-type: none;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+.profileNav li{
+    text-transform: uppercase;
+    font-size: 1.1rem;
+}
+form{
+    width: 100%;
+}
+form > fieldset{
+    width: 60%;
+    margin: auto !important;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 2rem !important;
+    border: 1px solid var(--default) !important;
+    color: var(--default) !important;
+}
+legend{
+    font-size: 1.5rem !important;
+    color: var(--secondary) !important;
+}
+input, select, button, textarea{
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 0;
+    resize: none;
+}
+input,select,button:hover{
+    cursor:url('http://www.javascriptkit.com/dhtmltutors/cursor-hand.gif'), auto !important; 
+}

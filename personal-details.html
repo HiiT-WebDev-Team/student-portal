@@ -4,10 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Student Portal - Personal Details</title>
+    <title>Student Portal</title>
     <link rel="stylesheet" type="text/css" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="pages.css">
+    <link rel="stylesheet" type="text/css" href="assets/fontawesome/css/all.css">
 </head>
 <body>
 
@@ -48,10 +52,10 @@
         <div class="offcanvas-body">
           <ul class="navbar-nav">
               <li class="nav-item">
-                  <a href="index.html" class="nav-link"><i class="fa-solid fa-house"></i> Dashboard</a>
+                  <a href="index.html" class="nav-link active"><i class="fa-solid fa-house"></i> Dashboard</a>
               </li>
               <li class="nav-item">
-                  <a href="personal-details.html" class="nav-link active"><i class="fa-solid fa-user"></i> Personal Details</a>
+                  <a href="personal-details.html" class="nav-link"><i class="fa-solid fa-user"></i> Personal Details</a>
               </li>
               <li class="nav-item dropdown">
                   <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-list"></i> Course Registration</a>
@@ -61,7 +65,7 @@
                   </ul>
               </li>
               <li class="nav-item">
-                  <a href="Result.html" class="nav-link"><i class="fa-solid fa-square-poll-horizontal"></i> Result</a>
+                  <a href="result.html" class="nav-link"><i class="fa-solid fa-square-poll-horizontal"></i> Result</a>
               </li>
               <li class="nav-item">
                   <a href="lecture-timetable.html" class="nav-link"><i class="fa-solid fa-table"></i> Lecture Timetable</a>
@@ -75,6 +79,118 @@
           <button type="button" class="btn btn-secondary btn-footer" data-bs-dismiss="offcanvas">Close</button>
         </div>
     </div>
+
+    <!-- PAGE Body starts here -->
+    <div class="body2">
+        <div class="body2-nav">
+            <h1><i class="fa-solid fa-circle-info"></i>Personal Details</h1>
+        </div>
+        <div class="body-contents">
+            <p>Welcome, <span>$Username</span></p>
+            <p>Fill in the below details with the right information to update your Profile and continue registration</p>
+            <ul class="profileNav">
+                <a href="#profile"><li>Profile</li></a>
+                <a href="#profile"><li>Bio</li></a>
+                <a href="#contactDetails"><li>Contact Details</li></a>
+                <a href="#schoolInfo"><li>School info</li></a>
+                <a href="#otherInfo"><li>Other info</li></a>
+            </ul>
+            <form>
+                <fieldset id="profile">
+                    <legend><i class="fa-solid fa-image-portrait"></i>Profile:</legend>
+                    <label>Select an image to upload (Passport-like):</label>
+                    <input type="file" id="profile_img">   
+                </fieldset>
+                <fieldset id="bio">
+                    <legend><i class="fa-solid fa-user"></i>Bio:</legend>
+                    <label for="Title">Title:</label>
+                    <select>
+                        <option selected disabled>Select</option>
+                        <option>Mr.</option>
+                        <option>Miss.</option>
+                        <option>Mrs.</option>
+                        <option>Sir</option>
+                        <option>Ma</option>
+                        <option>Madam</option>
+                    </select>
+                    <label for="fName">First Name:</label>
+                    <input type="text" placeholder="Enter your First Name">
+                    <label for="sName">Surname:</label>
+                    <input type="text" placeholder="Enter your Surname">
+                    <label for="mName">Middle Name:</label>
+                    <input type="text" placeholder="Enter your Middle Name">
+                    <label>Date of Birth:</label>
+                    <input type="date">
+                </fieldset>
+                <fieldset id="contactDetails">
+                    <legend><i class="fa-solid fa-address-card"></i>Contact Details:</legend>
+                    <label>Email Address:</label>
+                    <input type="email" placeholder="student@school.com">
+                    <label>Phone Number:</label>
+                    <input type="tel" placeholder="+234xxxxxxxxxx">
+                    <label>Hostel Name:</label>
+                    <input type="text" placeholder="">
+                    <label>Room Number:</label>
+                    <input type="text" placeholder="R. No.">
+                    <label>Home Address:</label>
+                    <input type="text" placeholder="Nearest Bus stop">
+                    <label>Next of Kin:</label>
+                    <input type="text" placeholder="Name of Next of Kin">
+                    <label>Next of Kin Contact:</label>
+                    <input type="tel" placeholder="Phone No. of Next of Kin">
+                </fieldset>
+                <fieldset id="schoolInfo">
+                    <legend><i class="fa-solid fa-id-badge"></i>Education Info:</legend>
+                    <label>Registration/ID Number:</label>
+                    <input type="text" placeholder="HiiT/Faculty/Year/xxx">
+                    <label for="level">Level:</label>
+                    <select>
+                        <option selected disabled>Choose Level</option>
+                        <option>100</option>
+                        <option>200</option>
+                        <option>300</option>
+                        <option>400</option>
+                        <option>500</option>
+                    </select>
+                    <label>Faculty:</label>
+                    <select>
+                        <option selected disabled>Select</option>
+                        <option> Engineering</option>
+                        <option>Sciences</option>
+                        <option>Arts</option>
+                        <option>Social Sciences</option>
+                        <option>Education</option>
+                    </select>
+                    <label>Department:</label>
+                    <input type="text" placeholder="Dept.">
+                </fieldset>
+                <fieldset id="otherInfo">
+                    <legend><i class="fa-solid fa-circle-question"></i>Other Info:</legend>
+                    <label>Hobbies:</label>
+                    <input type="text" placeholder="(seperate Hobbies with comma)" maxlength="35">
+                    <label>Skill(s):</label>
+                    <input type="text" placeholder="+234xxxxxxxxxx">
+                    <label>Experience(s):</label>
+                    <input type="text" placeholder="(seperate experiences with comma)" maxlength="45">
+                    <label>Interest(s):</label>
+                    <input type="text" placeholder="Interested in... (seperate with comma)" maxlength="45">
+                </fieldset>
+                <fieldset>
+                    <legend><i class="fa-solid fa-check-double"></i>All fields filled correctly?</legend>
+                    <button>SUBMIT</button>
+                </fieldset>
+            </form>
+        </div>
+        
+
+
+
+
+
+    </div>
+    
+    <!-- PAGE Body ends here -->
+
 </body>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </html>
